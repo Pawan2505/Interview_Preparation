@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter App</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    button { margin: 5px; padding: 8px 15px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h1 id="count">0</h1>
+<button onclick="updateCount(1)">+</button>
+<button onclick="updateCount(-1)">-</button>
+<button onclick="resetCount()">Reset</button>
+
+<script>
+let count = 0;
+
+function updateCount(value) {
+  count += value;
+  document.getElementById('count').textContent = count;
+}
+
+function resetCount() {
+  count = 0;
+  document.getElementById('count').textContent = count;
+}
+</script>
+
+</body>
+</html>
