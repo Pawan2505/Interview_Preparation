@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Bubbling</title>
+    <style>
+        .grandparent {
+            padding: 30px;
+            background: #ffb3b3;
+        }
+        .parent {
+            padding: 30px;
+            background: #b3d9ff;
+        }
+        .child {
+            padding: 30px;
+            background: #b3ffb3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grandparent">
+    GRANDPARENT
+    <div class="parent">
+        PARENT
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

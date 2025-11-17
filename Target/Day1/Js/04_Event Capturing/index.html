@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Capturing Demo</title>
+
+    <style>
+        .grandparent {
+            padding: 30px;
+            background: #ffcccc;
+        }
+        .parent {
+            padding: 30px;
+            background: #cce5ff;
+        }
+        .child {
+            padding: 30px;
+            background: #d4fccc;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Event Capturing Demo</h2>
+
+<div class="grandparent">
+    GRANDPARENT
+    <div class="parent">
+        PARENT
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart Style Search</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+        }
+        .search-box {
+            width: 300px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .suggestions {
+            border: 1px solid #ccc;
+            width: 322px;
+            margin-top: -1px;
+            background: white;
+            position: absolute;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+        .suggestion-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .suggestion-item:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Search</h2>
+    <input
+        type="text"
+        id="searchBox"
+        class="search-box"
+        placeholder="Search users..."
+        onkeyup="debouncedSearch()"
+    />
+
+    <div id="suggestions" class="suggestions"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
