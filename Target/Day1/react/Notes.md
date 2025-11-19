@@ -100,7 +100,6 @@ Jab ek data ko parent → child → grandchild → great-grandchild tak pass kar
 
 ✔ Context API
 ✔ Redux
-✔ useContext
 
 ---
 
