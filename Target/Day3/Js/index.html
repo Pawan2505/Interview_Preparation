@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="btn">Click Me</button> -->
+     <!-- <ul id="btn">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+     </ul>
+    <script>
+document.getElementById("btn").addEventListener("click", function (event) {
+  console.log(event.target); // <button> element
+});
+</script> -->
+<ul id="menu">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+
+<script>
+document.getElementById("menu").addEventListener("click", function (event) {
+  
+  // Sirf <li> par click hoga tabhi run kare
+  if (event.target.tagName === "LI") {
+    console.log("You clicked:", event.target.textContent);
+    event.target.style.color = "red"; // example effect
+  }
+
+});
+</script>
+
+</body>
+</html>

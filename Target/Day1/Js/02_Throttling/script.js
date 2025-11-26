@@ -11,7 +11,7 @@ function handleScroll() {
 
         setTimeout(() => {
             waiting = false;
-        }, 1000);    // 1 second me sirf 1 hi baar
+        }, 5000);    // 1 second me sirf 1 hi baar
     }
 }
 
